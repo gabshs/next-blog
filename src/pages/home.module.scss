@@ -1,1 +1,46 @@
-// TODO
+.post {
+  display: block;
+  padding: 0 8rem;
+
+  &:hover {
+    h1 {
+      color: var(--highlight);
+    }
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--heading);
+
+    transition: hover 0.2s;
+  }
+
+  &+a {
+    margin-top: 3rem;
+  }
+
+  &>p {
+    color: var(--body);
+    font-size: 1.125rem;
+    margin-top: 8px;
+  }
+}
+
+.loadMore {
+  background: inherit;
+  border: 0;
+  margin-top: 4rem;
+
+  padding: 0 8rem;
+
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--highlight);
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
